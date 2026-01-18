@@ -21,7 +21,7 @@
 }
 
 .nave-container h1 {
-    padding-left: 200px;
+    padding-left:8%;
 }
 
 .nave-a_tag a {
@@ -42,14 +42,52 @@
 }
 
 .btn {
-    /* width: 79px;
-    height: 19px; */
+    display: flex;
+    gap: 4px;
+    text-align: center;
     padding: 12px 16px;
     background: linear-gradient(25deg,
         #F7E93F 0%,
         #FB09B4 51%,
         #9100F8 100% );
-    margin-right: 200px;
+    margin-right: 8%;
     border-radius: 10000px;
     border: none;    
+}
+
+
+/* responsive */
+
+@media screen and (max-width:576px){
+    .nave-a_tag,
+    .btn {
+        display: none;
+    }
+    
+    .nave-container h1 {
+        padding: 20px;
+    }
+    .menu {
+        margin-right: 20px;
+    }
+    .nave-container {
+        height: 60px;
+        width: 99.5%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .menu {
+        display: none;
+    }
+    .nave-container {
+        width: 95%;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    .menu {
+        display: none;
+    }
 }
