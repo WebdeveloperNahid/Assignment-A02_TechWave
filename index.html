@@ -1,27 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <Navebar class="nave-container width">
-        <h1>Tech<span class="gradient-text">Wave</span></h1> 
-        <div class="nave-a_tag">
-            <a href="">About</a>
-            <a href="">Episodes</a>
-            <a href="">Host</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <navebar class="nave-container width">
+      <h1>Tech<span class="gradient-text">Wave</span></h1>
+      <div class="nave-link">
+        <a href="">About</a>
+        <a href="">Episodes</a>
+        <a href="">Host</a>
+      </div>
+      <button class="btn">
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <span class="menu"><i class="fa-solid fa-bars"></i></span>
+    </navebar>
+
+    <header class="hero-section width">
+      <div class="header-hero">
+        <div class="hero-box">
+          <div class="hero-container">
+            <div class="hero-img">
+              <div class="hero-micro">
+                <img  src="assets/microphone.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <h1 class="hero_T">TechWave</h1>
+          <p class="hero_p">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+          <div class="btns">
+            <div id="btn-spotify"><img src="assets/spotify.png" alt="" /> Listen on Spotify</div>
+            <div id="btn-subscribe"><img src="assets/message.png" alt="" />Subscribe</div>
+          </div>
         </div>
-        <button class="btn">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-
-        <span class="menu"><i class="fa-solid fa-bars"></i></span>
-
-    </Navebar>
-
-    
-
-</body>
+      </div>
+    </header>
+  </body>
 </html>
