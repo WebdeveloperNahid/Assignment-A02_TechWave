@@ -304,6 +304,81 @@
 .vedio-text span {
   color: #00ff88;
 }
+/* meet-the-host-section */
+.met-host {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.meet-host-container {
+  background-color: #250d44;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+  padding: 50px 20px;
+}
+.meet-text-icons{
+  display: flex;
+  gap: 8px;
+}
+.meet-text p {
+  padding: 15px 0px;
+}
+.icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* fotter-section */
+.fotter-container h1 {
+  font-size: 60px;
+}
+.fotter-container {
+  background-image: url(assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 412px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding-top: 100px;
+}
+.fotter-apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.apps span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.fotter-container p {
+  padding-top: 30px;
+}
+.fotter-warps {
+  display: flex;
+}
+.fotter-warp_ {
+  display: block;
+
+}
+.hidden-fotter {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 /* responsive */
 @media screen and (max-width: 576px) {
@@ -322,7 +397,8 @@
   .hero-section,
   .main-section,
   .why-choose,
-  .featured-episodes {
+  .featured-episodes,
+  .fotter-container {
     width: 100%;
   }
   .main-container {
@@ -355,8 +431,27 @@
     grid-row: span 2;
   }
   .why-choose {
+    padding-bottom: 400px;
+  }
+  .why-choose {
     padding-bottom: 370px;
   }
+
+  .meet-host-container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .meet-text {
+    text-align: center;
+  }
+  .meet-text-icons {
+    justify-content: center;
+    align-items: center;
+  }
+  .hidden-apps {
+    display: none;
+  }
+
   
 }
 
@@ -365,7 +460,8 @@
   .hero-section,
   .main-section,
   .why-choose,
-  .featured-episodes {
+  .featured-episodes,
+  .fotter-container {
     width: 95%;
   }
   .btn {
@@ -399,10 +495,29 @@
   .why-choose {
     padding-bottom: 370px;
   }
+
+  .meet-host-container {
+    flex-direction: column;
+  }
+  .meet-text {
+    text-align: center;
+  }
+  .meet-text-icons {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hidden-apps {
+    display: none;
+  }
+  
 }
 
 @media screen and (min-width: 992px) {
   .menu {
+    display: none;
+  }
+  .hidden-fotter {
     display: none;
   }
 }
