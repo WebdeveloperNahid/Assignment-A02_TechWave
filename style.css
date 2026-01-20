@@ -208,7 +208,7 @@
 /* ------------------------------------- */
 /* Why choose TechWave */
 .why-choose {
-  max-height: 1121px;
+  max-height: 2121px;
   background-color: #230e3d;
   padding: 30px 50px;
   display: flex;
@@ -342,6 +342,22 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+  .choose-grid-box {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .width-grid,
+  .height-grid,
+  .one-grid {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .why-choose {
+    padding-bottom: 370px;
+  }
+  
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -366,6 +382,22 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+  }
+
+  .choose-grid-box {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .width-grid,
+  .height-grid,
+  .one-grid {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .why-choose {
+    padding-bottom: 370px;
   }
 }
 
