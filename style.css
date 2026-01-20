@@ -168,6 +168,8 @@
     color: white;
   }
 }
+
+/* main-section */
 .main-container {
   display: flex;
   flex-direction: column;
@@ -176,10 +178,8 @@
   text-align: center;
   height: 222px;
   padding: 150px 150px;
-
-
 }
-.main-container p{
+.main-container p {
   padding-top: 10px;
   padding-bottom: 15px;
   font-size: 1rem;
@@ -189,9 +189,104 @@
   margin-bottom: 20px;
 }
 .main-reating {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-top: 15px;
 }
+
+.main-reating h1 {
+  color: #00ff88;
+}
+.ret {
+  text-align: center;
+  /* width: 140px; */
+  /* height: 54px; */
+}
+
+.main-reating {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 200px);
+
+}
+/* ------------------------------------- */
+/* Why choose TechWave */
+.why-choose {
+  height: 1121px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #230E3D;
+  padding:30px 50px;
+}
+.why-choose-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.why-h2 {
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 10px;
+}
+.choose-grid-box {
+  margin: 0 auto;
+  height: 783px;
+  width: 90%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3,16.4rem);
+  grid-template-rows: repeat(3, 15.2rem);
+}
+.box {
+  background-color: #00ff88;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.width-grid {
+  grid-column: span2;
+  grid-row: span1;
+}
+
+.height-grid {
+  grid-column: span1;
+  grid-row: span2;
+}
+.one-grid {
+  grid-column: span1;
+  grid-rows:span1;
+}
+
+/* Featured Episodes */
+
+.vedio-box1 {
+  width: 380px;
+  height: 440px;
+  background-color: #250D44;
+  border-radius: 24px;
+}
+.vedio-1 {
+  width: 380px;
+  height: 214px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
+  
+}
+.vedio-text {
+  padding: 24px;
+
+}
+.vedio-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.vedio-text p {
+  padding: 12px 0px;
+}
+.vedio-text span {
+  color: #00ff88;
+}
+
 
 /* responsive */
 @media screen and (max-width: 576px) {
@@ -208,33 +303,29 @@
   }
   .nave-container,
   .hero-section,
-  .main-section {
+  .main-section,
+  .why-choose {
     width: 99.5%;
   }
   .main-container {
-    padding:150px 50px;
+    padding: 150px 50px;
   }
-
-
-  
-}
-
-
-/* main-section */
-
-.main-reating h1 {
-  color: #00ff88;
-}
-
-.main-reating {
-  display: flex;
-  justify-content: space-between;
+  .main-reating {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 270px);
+  }
+  .main-reating {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .nave-container,
   .hero-section,
-  .main-section {
+  .main-section,
+  .why-choose {
     width: 95%;
   }
   .btn {
@@ -247,7 +338,6 @@
     display: none;
   }
 }
-
 
 @media screen and (min-width: 992px) {
   .menu {
