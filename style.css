@@ -275,19 +275,19 @@
 }
 
 .vedio-box1 {
-  max-width: 380px;
+  max-width: 280px;
   max-height: 440px;
   background-color: #250d44;
   border-radius: 24px;
 }
 .vedio-1 {
-  max-width: 380px;
+  max-width: 280px;
   max-height: 214px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   overflow: hidden;
 }
-.iframe {
+.vedio-1 iframe {
   max-width: 380px;
   max-height: 214px;
 }
@@ -452,6 +452,13 @@
     display: none;
   }
 
+  .vedio-box1 {
+    max-width: 380px;
+  }
+  .vedio-1 {
+    max-width: 380px;
+  }
+
   
 }
 
@@ -510,7 +517,12 @@
   .hidden-apps {
     display: none;
   }
-  
+  .vedio-box1 {
+    max-width: 380px;
+  }
+  .vedio-1 {
+    max-width: 380px;
+  }
 }
 
 @media screen and (min-width: 992px) {
