@@ -208,50 +208,54 @@
 /* ------------------------------------- */
 /* Why choose TechWave */
 .why-choose {
-  height: 1121px;
-  width: 90%;
-  margin: 0 auto;
+  max-height: 1121px;
   background-color: #230e3d;
   padding: 30px 50px;
+  display: flex;
+  justify-content: center;
 }
 .why-choose-container {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .why-h2 {
-  margin: 0 auto;
-  display: block;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .choose-grid-box {
-  margin: 0 auto;
-  height: 783px;
-  width: 90%;
+  padding: 10px 50px;
+  max-height: 783px;
   display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(3, 16.4rem);
-  grid-template-rows: repeat(3, 15.2rem);
+  gap: 10px;
+  grid-template-columns: repeat(3, 280px);
+  grid-template-rows: repeat(3, 170px);
 }
 .box {
-  background-color: #00ff88;
-  border-radius: 50px;
+  background-color: #351165;
+  border-radius: 40px;
   padding: 20px;
 }
 
 .width-grid {
-  grid-column: span2;
-  grid-row: span1;
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .height-grid {
-  grid-column: span1;
-  grid-row: span2;
+  padding-top: 40px;
+  grid-column: span 1;
+  grid-row: span 2;
 }
 .one-grid {
-  grid-column: span1;
-  grid-rows: span1;
+  grid-column: span 1;
+  grid-rows: span 1;
 }
+
+.box h2 {
+  padding: 10px 0px;
+}
+
 
 /* Featured Episodes */
 .featured-episodes-container {
