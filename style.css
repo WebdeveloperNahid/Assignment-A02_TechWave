@@ -51,6 +51,7 @@
 .btn:hover {
   border: 2px solid white;
   transition: all 1s;
+  cursor: pointer;
 }
 
 /* header */
@@ -120,6 +121,7 @@
   transition: all 1s;
   transform: scale(1.5rem);
   font-weight: bold;
+  cursor: pointer;
 }
 #btn-subscribe {
   display: flex;
@@ -136,6 +138,7 @@
   transform: scale(1.2rem);
   color: red;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .new-btn {
@@ -208,7 +211,7 @@
 /* ------------------------------------- */
 /* Why choose TechWave */
 .why-choose {
-  max-height: 2121px;
+  /* max-height: 1121px; */
   background-color: #230e3d;
   padding: 30px 50px;
   display: flex;
@@ -249,13 +252,12 @@
 }
 .one-grid {
   grid-column: span 1;
-  grid-rows: span 1;
+  grid-row: span 1;
 }
 
 .box h2 {
   padding: 10px 0px;
 }
-
 
 /* Featured Episodes */
 .featured-episodes-container {
@@ -271,7 +273,7 @@
 .featured-youtube-vedios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
 
 .vedio-box1 {
@@ -287,10 +289,7 @@
   border-top-right-radius: 24px;
   overflow: hidden;
 }
-.vedio-1 iframe {
-  max-width: 380px;
-  max-height: 214px;
-}
+
 .vedio-text {
   padding: 24px;
 }
@@ -315,10 +314,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:20px;
+  gap: 20px;
   padding: 50px 20px;
 }
-.meet-text-icons{
+.meet-text-icons {
   display: flex;
   gap: 8px;
 }
@@ -357,7 +356,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-
 }
 
 .fotter-container p {
@@ -368,7 +366,6 @@
 }
 .fotter-warp_ {
   display: block;
-
 }
 .hidden-fotter {
   display: flex;
@@ -378,7 +375,6 @@
   align-items: center;
   text-align: center;
 }
-
 
 /* responsive */
 @media screen and (max-width: 576px) {
@@ -420,8 +416,9 @@
   }
   .choose-grid-box {
     display: grid;
-    height: 100%;
-    grid-template-columns: repeat(2,1fr);
+    max-height: 783px;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .width-grid,
@@ -430,11 +427,9 @@
     grid-column: span 2;
     grid-row: span 2;
   }
+
   .why-choose {
-    padding-bottom: 400px;
-  }
-  .why-choose {
-    padding-bottom: 370px;
+    padding-bottom: 380px;
   }
 
   .meet-host-container {
@@ -453,13 +448,16 @@
   }
 
   .vedio-box1 {
-    max-width: 380px;
+    min-width: 380px;
   }
   .vedio-1 {
-    max-width: 380px;
+    min-width: 380px;
   }
 
-  
+  /* .vedio-1 iframe {
+    max-width: 380px;
+    max-height: 214px;
+  } */
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -469,7 +467,7 @@
   .why-choose,
   .featured-episodes,
   .fotter-container {
-    width: 95%;
+    width: 97%;
   }
   .btn {
     margin-right: 5%;
@@ -490,7 +488,7 @@
   .choose-grid-box {
     display: grid;
     height: 100%;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .width-grid,
@@ -513,7 +511,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .hidden-apps {
     display: none;
   }
@@ -523,6 +521,7 @@
   .vedio-1 {
     max-width: 380px;
   }
+  /* / */
 }
 
 @media screen and (min-width: 992px) {
@@ -531,5 +530,44 @@
   }
   .hidden-fotter {
     display: none;
+  }
+  .vedio-box1 {
+    max-width: 280px;
+  }
+  /* .vedio-1 {
+    max-width: 280px;
+    max-height: 214px;
+  } */
+  .vedio-1 iframe {
+    max-width: 280px;
+    max-height: 214px;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 500px) {
+  .why-choose {
+    padding-bottom: 530px;
+    padding-top: 50px;
+  }
+  .vedio-box1 {
+    min-width: 315px;
+  }
+  .vedio-1 {
+    min-width: 315px;
+  }
+
+  .vedio-1 iframe {
+    min-width: 315px;
+  }
+
+  /* .why-choose {
+    padding: 400px 10px;
+  } */
+  .choose-grid-box {
+    padding: 10px 30px;
+  }
+  .featured-episodes-container {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
